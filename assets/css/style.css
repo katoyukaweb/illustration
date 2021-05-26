@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    z-index: 10000;
+    min-width: 90px;
+}
+
+.grid {
+    width: 100%;
+    position: relative;
+    margin: 10%;
+}
+.grid-sizer,
+.grid-item {
+    width: 25%;
+    overflow: hidden;
+}
+.grid-item-2x {
+    width: 50%;
+}
+.grid-item-3x {
+    width: 75%;
+}
+
+.grid-item a,
+.grid-item-2x a,
+.grid-item-3x a {
+    /* dispplay:block; にしないと、隙間があいてしまったりするので */
+    display: block;
+}
+
+.grid-item img,
+.grid-item-2x img,
+.grid-item-3x img,
+video{
+    /* dispplay:block; にしないと、隙間があいてしまったりするので */
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 200ms 0s ease;
+}
+
+  .grid-item img,.grid-item video:hover{
+  transform: scale(1.02);
+}
+
+@media screen and (max-width:480px){
+    .grid-item{
+        width: 50%;
+    }   
+    .grid{
+        margin: 0;
+    }
+}
+
