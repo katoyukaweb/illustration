@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+#wrapper{
+    padding: 10%;
+}
 .logo{
     width: 10%;
     position: fixed;
@@ -16,7 +19,6 @@
 .grid {
     width: 100%;
     position: relative;
-    margin: 10%;
 }
 .grid-sizer,
 .grid-item {
