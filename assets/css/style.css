@@ -9,6 +9,7 @@
     height: 100vh;
     position: fixed;
     z-index: 10001;
+    transition: all .5s;
 }
 .loaded{
     display: none;
