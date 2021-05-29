@@ -1,3 +1,8 @@
+window.onload = ()=>{
+    var load = document.querySelector('.loading');
+    load.classList.add('loaded')
+};
+
 
 window.addEventListener('load', ()=> {
     var elem = document.querySelector('.grid');
@@ -9,4 +14,3 @@ window.addEventListener('load', ()=> {
 })
 
 
-s
