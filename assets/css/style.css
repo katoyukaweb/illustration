@@ -3,22 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.loading{
-    background-color: #fff;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 10001;
-    transition: all .5s;
-}
-.loaded{
-    display: none;
-}
+
 .anime{
-    width: 20%;
-    display: inline;
-    margin: 0 auto;
-    vertical-align: middle;
+    display: block;
 }
 .logo{
     width: 10%;
@@ -74,6 +61,37 @@ video{
 
 img:hover{
     transform: scale(1.05);
+}
+
+.loading{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10001;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+}
+.loaded{
+    display: none;
+    animation : fadeOut 1s;
+    animation-fill-mode: both;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+.animebox{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
 }
 
 @media screen and (max-width:480px){
