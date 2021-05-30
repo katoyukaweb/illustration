@@ -18,6 +18,10 @@
     z-index: 10000;
     min-width: 90px;
 }
+.logowhite{
+    text-align: center;
+    width: 20%;
+}
 #wrapper{
     margin: 0 10%;
 }
@@ -74,6 +78,8 @@ video{
     transition: all .5s;
     display: flex;
     justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .loaded{
     animation : fadeOut 1s;
@@ -86,13 +92,6 @@ video{
     100% {
       opacity: 0;
     }
-}
-.animebox{
-    width: 20%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    object-fit: contain;
 }
 
 @media screen and (max-width:480px){
