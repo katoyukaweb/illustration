@@ -1,7 +1,3 @@
-window.onload = ()=>{
-    var load = document.querySelector('.loading');
-    load.classList.add('loaded')
-};
 
 
 window.addEventListener('load', ()=> {
