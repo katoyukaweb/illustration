@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.body{
-    background: #fafafa;
-}
-.anime{
-    display: block;
-}
 .logo{
     width: 10%;
     position: fixed;
@@ -18,89 +12,35 @@
     z-index: 10000;
     min-width: 90px;
 }
-.logowhite{
-    text-align: center;
-    width: 20%;
-    min-height: 60px;
-}
-#wrapper{
-    margin: 0 10%;
-}
-.grid {
-    width: 100%;
+#wrapper {
     position: relative;
-    overflow: hidden;
-}
-.grid-sizer,
-.grid-item {
-    width: 25%;
-    overflow: hidden;
-}
-.grid-item-2x {
-    width: 50%;
-}
-.grid-item-3x {
-    width: 75%;
-}
-
-.grid-item a,
-.grid-item-2x a,
-.grid-item-3x a {
-    /* dispplay:block; にしないと、隙間があいてしまったりするので */
-    display: block;
-}
-
-.grid-item img,
-.grid-item-2x img,
-.grid-item-3x img,
-video{
-    /* dispplay:block; にしないと、隙間があいてしまったりするので */
-    display: block;
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: all 200ms 0s ease;
-}
-
-.grid-item img:hover{
-    transform: scale(1.02);
-}
-.grid-item video:hover{
-    transform: scale(1.02);
-}
-
-
-.loading{
-    background-color: #1a0406;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 10001;
-    display: flex;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-}
-.loaded{
-    animation : fadeOut 1s;
-    animation-fill-mode: both;
+    margin: 0 auto;   /*全体の中央寄せ*/
+    padding: 0 10%;
   }
-  @keyframes fadeOut {
-    0% {
-    height: 100%;
-    }
-    100% {
-    height: 0;
-      
-    }
-}
+  #container {
+    width: 100%;
+    margin: 0 auto;   /*中央寄せ*/
+    position: relative;
+  }
 
+  div {
+      overflow: hidden;
+  }
+
+  .item img,video{
+      width: 100%;
+      transition: all 200ms 0s ease;
+      vertical-align: bottom;
+  }
+    .item img:hover{
+    transform: scale(1.02);
+}
+.item{
+    width: 33.3%;
+}
 @media screen and (max-width:480px){
-    .grid-item{
+    .item{
         width: 50%;
     }   
-    .grid{
-        margin: 0;
-    }
 }
-
