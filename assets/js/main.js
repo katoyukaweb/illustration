@@ -1,12 +1,9 @@
-
-
-window.addEventListener('load', ()=> {
-    var elem = document.querySelector('.grid');
-    var msnry = new Masonry( elem, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
+// marsonyを実行
+var $container = $('#container').imagesLoaded(function () {
+    $container.masonry({
+        itemSelector: '.item',
+        isAnimated: true,
+        gutterWidth: 0,
+        isFitWidth: true   //親要素の幅サイズがピッタリ
     });
-})
-
-
+});
