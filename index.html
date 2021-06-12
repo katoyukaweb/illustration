@@ -1,220 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
-  <title>katoyuka</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <title>katoyuka</title>
 </head>
-
 <body>
-  <div class="loading">
-    <img src="assets/img/logowhite.svg" alt="ロゴ" class="logowhite" />
-  </div>
-  <div id="wrapper">
+    <img src="assets/img/logo2.svg" alt="ロゴ" class="logo">
+    <div id="wrapper">
+                <div id="container">
+                <!-- 画像一個分 -->
+                    <div class="item x2">
+                        <a href="https://www.pixiv.net/artworks/89498513" target="_blank" rel="noopener noreferrer" >
+                            <img src="assets/img/tear.jpg" alt="連作１">
+                        </a>
+                    </div>
 
-    <div class="grid">
-      <!--
-        1つ25%幅（4列）がベース
-        大きく使いたいものは
-        <div class="grid-item"> ＝2カラム分
-        <div class="grid-item"> ＝3カラム分
-        のように指定 ※grid-itemとgrid-item-2xの「2つ」のクラスが必要！
-      -->
+                    <!-- 画像一個分 -->
+                        <div class="item x2">
+                            <a href="https://www.pixiv.net/artworks/89791615"target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/aaaaaaaaaaaa.jpg" alt="連作２"  >
+                            </a>
+                        </div>
 
-      <!-- 固定ロゴ -->
-      <div class="static-banner">
-        <img src="assets/img/logo2.svg" alt="ロゴ" class="logo" />
-      </div>
+                    <!-- 画像一個分 -->
+                    <div class="item x2">
+                        <a href="https://www.pixiv.net/artworks/89889397"target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/ang.jpg" alt="連作３"  >
+                        </a>
+                    </div>
 
-      <!-- 可変幅にするために必要 ※プラグインの仕様 -->
-      <div class="grid-sizer"></div>
+                        <!-- 画像一個分 -->
+                            <div class="item x3">
+                                <a href="https://www.pixiv.net/artworks/84304463"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/washface.png" alt="洗面台"  >
+                                </a>
+                            </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89498513" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/tear.jpg" alt="連作１" />
-        </a>
-      </div>
+                <!-- 画像一個分 -->
+                <div class="item x2">
+                    <a href="https://www.pixiv.net/artworks/79266766" target="_blank" rel="noopener noreferrer" >
+                        <img src="assets/img/amu.png" alt="遊園地">
+                    </a>
+                </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89791615" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/aaaaaaaaaaaa.jpg" alt="連作２" />
-        </a>
-      </div>
+                <!-- 画像一個分 -->
+                <div class="item x2">
+                    <a href="https://www.pixiv.net/artworks/79266766" target="_blank" rel="noopener noreferrer" >
+                        <video src="assets/img/cameratest.mp4" autoplay muted loop></video>
+                    </a>
+                </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89889397" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/ang.jpg" alt="連作３" />
-        </a>
-      </div>
+                    <!-- 画像一個分 -->
+                            <div class="item x3">
+                                <a href="https://www.pixiv.net/artworks/89367514" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/museum.png" alt="美術館" >
+                                </a>
+                            </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/90209819" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/angry.jpg" alt="連作４" />
-        </a>
-      </div>
+                        <!-- 画像一個分 -->
+                        <div class="item x3">
+                            <a href="https://twitter.com/_uotaK_/status/1389573449882902529"  target="_blank" rel="noopener noreferrer">
+                                <video src="/assets/img/movie.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        
+                        <!-- 画像一個分 -->
+                        <div class="item x3">
+                            <a href="https://www.pixiv.net/artworks/81179163"  target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/tonkachie.png" alt="橋">
+                            </a>
+                        </div>
 
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/87576410"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/garacylandscape.jpg" alt="銀河鉄道の夜"  >
+                                </a>
+                            </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/89367405" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/marble.jpg" alt="お風呂" />
-        </a>
-      </div>
-
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/78164328" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/peach.png" alt="ピーチ" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/78164328" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/avocado.png" alt="アボガド" />
-        </a>
-      </div>
-      
-            <!-- 画像一個分 -->
-            <div class="grid-item grid-item-2x">
-              <a href="https://twitter.com/_uotaK_/status/1389573449882902529?s=20" target="_blank" rel="noopener noreferrer loading='lazy'">
-                <video src="assets/img/movie.mp4" autoplay muted loop></video>
-              </a>
-            </div>
-           
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/79266766" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/amu.png" alt="遊園地" />
-        </a>
-      </div>
-
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/87576410" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/garacylandscape.jpg" alt="銀河鉄道の夜" />
-        </a>
-      </div>
+                        <!-- 画像一個分 -->
+                            <div class="item x3">
+                                <a href="https://www.pixiv.net/artworks/89367405"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/marble.jpg" alt="お風呂"  >
+                                </a>
+                            </div>
+                        <!-- 画像一個分 -->
+                        
+                        <div class="item x3">
+                            <a href="https://www.pixiv.net/artworks/81615080"target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/laugh.png" alt="黛灰"  >
+                            </a>
+                        </div>
 
 
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/89367514" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/museum.png" alt="美術館" />
-        </a>
-      </div>
+                    <!-- 画像一個分 -->
+                        <div class="item x3">
+                            <a href="https://www.pixiv.net/artworks/78802364"target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/heartbeat.png" alt="心電図"  >
+                            </a>
+                        </div>
+                    
+                        <!-- 画像一個分 -->
+                            <div class="item x3">
+                                <a href="https://www.pixiv.net/artworks/76925571"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/sotsugyou.png" alt="卒業"  >
+                                </a>
+                            </div>
 
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/80829440"target="_blank" rel="noopener noreferrer"  >
+                                    <img src="assets/img/cherry.png" alt="桜">
+                                </a>
+                            </div>
+                            
+                    <!-- 画像一個分 -->
+                    <div class="item x1">
+                        <a href="https://www.pixiv.net/artworks/89809204" target="_blank" rel="noopener noreferrer" >
+                            <img src="assets/img/hrmk.png" alt="春巻">
+                        </a>
+                    </div>
 
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/84304463" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/washface.png" alt="洗面台" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/78802364" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/heartbeat.png" alt="心電図" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/81179163" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/tonkachie.png" alt="橋" />
-        </a>
-      </div>
+                    <!-- 画像一個分 -->
+                        <div class="item x1">
+                            <a href="https://www.pixiv.net/artworks/89809435" target="_blank" rel="noopener noreferrer" >
+                                <img src="assets/img/ham.jpg" alt="生ハム">
+                            </a>
+                        </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/80829440" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/cherry.png" alt="桜" />
-        </a>
-      </div>
+                    <!-- 画像一個分 -->
+                            <div class="item x1">
+                                <a href="https://www.pixiv.net/artworks/89809301" target="_blank" rel="noopener noreferrer" >
+                                    <img src="assets/img/iceandcake.png" alt="ケーキ">
+                                </a>
+                            </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/81615080" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/laugh.png" alt="黛灰" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89809301" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/iceandcake.png" alt="ケーキ" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/89367405" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <video src="assets/img/citylights_Trim.mp4" autoplay muted loop></video>
-        </a>
-      </div>
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/78164328"target="_blank" rel="noopener noreferrer"  >
+                                    <img src="assets/img/peach.png" alt="ピーチ"  >
+                                </a>
+                            </div>
+                        
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/78164328"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/avocado.png" alt="アボガド"  >
+                                </a>
+                            </div>
 
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/76925571" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/sotsugyou.png" alt="卒業" />
-        </a>
-      </div>
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/77490116"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/entrance.png" alt="玄関"  >
+                                </a>
+                            </div>
 
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/74181254"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/parking.png" alt="駐車場"  >
+                                </a>
+                            </div>
 
+                        <!-- 画像一個分 -->
+                            <div class="item x2">
+                                <a href="https://www.pixiv.net/artworks/76925641"target="_blank" rel="noopener noreferrer"  >
+                                    <img src="assets/img/dinner.png" alt="夕食">
+                                </a>
+                            </div>
 
+                        <!-- 画像一個分 -->
+                            <div class="item x1">
+                                <a href="https://www.pixiv.net/artworks/89809547"target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/img/melon.png" alt="メロンソーダ"  >
+                                </a>
+                            </div>
 
-
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/77490116" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/entrance.png" alt="玄関" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/74181254" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/parking.png" alt="駐車場" />
-        </a>
-      </div>
-
-      <!-- 画像一個分 -->
-      <div class="grid-item grid-item-2x">
-        <a href="https://www.pixiv.net/artworks/76925641" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/dinner.png" alt="夕食" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-            
- 
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89809435" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/ham.jpg" alt="生ハム" />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89809547" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/melon.png" alt="メロンソーダ" />
-        </a>
-      </div>
-      <!-- 画像一個分 -->
-      <div class="grid-item">
-        <a href="https://www.pixiv.net/artworks/89809204" target="_blank" rel="noopener noreferrer loading='lazy'">
-          <img src="assets/img/hrmk.png" alt="春巻" />
-        </a>
-      </div>
-
+        </div> 
     </div>
-    <!-- / grid -->
-  </div>
-  <!-- wrapper -->
-</body>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
+</body>
 </html>
