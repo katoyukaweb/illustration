@@ -100,6 +100,9 @@ video{
     .grid{
         margin: 0;
     }
+    .bigimg img, .bigimg video {
+        width: 100%;
+    }
 }
 
 .modal {
@@ -120,9 +123,12 @@ video{
     left: 0;
     margin: auto;
     height: fit-content;
-    }
+    top: 0;
+    bottom: 0;
+}
+
 .bigimg img,.bigimg video {
-        width: auto;
+        width: auto%;
         margin: 0 auto;
         vertical-align: middle;
         max-height: calc(100vh - 3rem);
