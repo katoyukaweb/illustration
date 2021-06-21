@@ -36,6 +36,8 @@ $(function() {
     $('.close-btn').click(function() {
         $('.modal').fadeOut();
         $('body,html').css('overflow-y', 'visible');
-        $('.bigimg img,.bigimg video').css('display','block');
+        setTimeout(function(){
+            $('.bigimg img,.bigimg video').css('display','block');
+        },500);
       });
   });
