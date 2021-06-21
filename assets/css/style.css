@@ -110,21 +110,20 @@ video{
       height: 100vh;
       background-color: rgba(9,2,3,.9);
       display: none;
+      z-index: 10000;
     }
 
 .bigimg {
     position: absolute;
-    top: 0;
     right: 0;
-    bottom: 0;
     text-align: center;
     left: 0;
     margin: auto;
     height: fit-content;
     }
-.bigimg img {
-
+.bigimg img,.bigimg video {
         width: auto;
+        margin: 0 auto;
         vertical-align: middle;
         max-height: calc(100vh - 3rem);
     }

@@ -20,11 +20,22 @@ $(function() {
         $('.bigimg').children().attr('src', imgSrc);
         $('.modal').fadeIn();
         $('body,html').css('overflow-y', 'hidden');
+        $('.bigimg video').css('display','none');
         return false
       });
-    
+
+      $('.grid-item video').click(function() {
+        var videoSrc = $(this).attr('src');
+        $('.bigimg').children().attr('src', videoSrc);
+        $('.modal').fadeIn();
+        $('body,html').css('overflow-y', 'hidden');
+        $('.bigimg img').css('display','none');
+        return false
+      });
+
     $('.close-btn').click(function() {
         $('.modal').fadeOut();
         $('body,html').css('overflow-y', 'visible');
+        $('.bigimg img,.bigimg video').css('display','block');
       });
   });
